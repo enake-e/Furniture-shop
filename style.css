@@ -324,12 +324,19 @@ body {
   color: #000;
 }
 
-.items-row {
-  display: flex;
-  column-gap: 25px;
+.items-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(5, 237px);
+  grid-gap: 40px 25px;
 }
 
-.items-row a {
+.items-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 302px);
+  grid-gap: 40px 25px;
+}
+
+.items-grid-1 a, .items-grid-2 a {
   text-decoration: none;
 }
 
@@ -374,6 +381,10 @@ body {
   border-radius: 30px;
   box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
   position: relative;
+}
+
+.item:hover {
+  box-shadow: inset 0px 0px 10px 0px rgba(255, 157, 0, 0.3);
 }
 
 .item__img {
